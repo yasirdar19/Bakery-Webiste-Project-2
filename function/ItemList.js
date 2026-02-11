@@ -19,8 +19,53 @@
         for (let i = 0; i < itemList.length; i++){
 
             const cardDiv = document.createElement("div");
+
+            
+        // Image
+            const img = document.createElement("img");
+            img.src = itemList[i].image;                  
+            img.alt = itemList[i].name || "Item image";   
+            //img.loading = "lazy"; 
+
+            
+        // Title (h3)
+            const h3 = document.createElement("h3");
+            h3.className = "primary-font";
+            h3.style.fontSize = "1.1rem";
+            h3.textContent = itemList[i].name;
+
+            
+        // Price (h4)
+            const h4 = document.createElement("h4");
+            h4.className = "primary-font";
+            h4.style.fontSize = "1rem";
+            h4.textContent = "Price: $" + itemList[i].price;
+
+            
+        // Button
+            const button = document.createElement("button");
+            button.type = "button";
+            button.textContent = "Add to Cart";
+            button.addEventListener("click", () => addItem(i));
+
+
+        // Assemble card
+            //cardDiv.appendChild(img);
+            cardDiv.appendChild(h3);
+            cardDiv.appendChild(h4);
+            cardDiv.appendChild(button);
+
+        
+            /*cardDiv.img src= itemList[i].image;
+            cardDiv.class="primary-font";
+            cardDiv.style="font-size: 1.1rem";
             cardDiv.textContent = itemList[i].name;
-            console.log(itemList[i])
+            cardDiv.class="primary-font" 
+            cardDiv.style="font-size: 1rem">
+            cardDiv.textContent = "Price:" + $itemList[i].price;
+            cardDiv.button onclick= "addItem(i)">"Add to Cart"</button;
+            */
+
             myCards.appendChild(cardDiv);
 
             /*<div class="card">

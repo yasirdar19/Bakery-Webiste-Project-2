@@ -15,3 +15,5 @@ const cart = []; //Array holding food items
     function getCartSize(){
         return cart.length;
     }
+
+
