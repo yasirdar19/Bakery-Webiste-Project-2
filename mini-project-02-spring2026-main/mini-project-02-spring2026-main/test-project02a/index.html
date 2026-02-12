@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Basics</title>
+  </head>
+  <body>
+     h1>Hello World</h1>
+    <h2 id="sumData"></h2>
+    <h2 id="prodData"></h2>
+    <h2 id="fact"></h2>
+    <div>
+      <h1>Factorial Generator</h1>
+      <h4>Enter a number:</h4>
+      <input type="text" id="numberEntry" placeholder="0" />
+      <button onclick="getResult()">get factorial</button>
+      <p>Your output will appear here: <strong id="output"></strong></p>
+    </div>
+    <hr />
+    <div>
+      <h1>Arithmetic Series Generator</h1>
+      <h4>First term, a:</h4>
+      <input type="text" name="" id="a" />
+      <br />
+      <h4>Difference, d:</h4>
+      <input type="text" id="d" />
+      <br />
+      <h4>Series Length, n</h4>
+      <input type="text" id="n" />
+      <br />
+      <br />
+      <button id="seriesGenerator">Generate Series</button>
+      <div id="step-by-step"></div>
+    </div>
+    <script src="./factorialRelatedScript.js"></script>
+    <script src="./seriesRelatedScript.js"></script>
+
+     <!--  NEW PALINDROME SECTION  -->
+
+     <section class="palindrome-section" style="text-align: center; padding: 60px;">
+      <h2 class="primary-font" style="font-size: 36px;">Palindrome Checker</h2>
+
+
+      <input
+        type="text"
+        id="palindromeInput"
+        placeholder="Enter a word or phrase"
+        style="padding: 10px; width: 350px;"
+      />
+
+      <br /><br />
+
+      <button onclick="checkPalindrome()">Check</button>
+    </section>
+    
+    <script>
+  function checkPalindrome() {
+
+    // Get what the user typed
+    let word = document.getElementById("palindromeInput").value;
+
+  
+    word = word.toLowerCase();
+
+    //  Reverse the word
+    let reversedWord = word.split("").reverse().join("");
+
+  
+    if (word === reversedWord && word !== "") {
+      
+      alert("Yes! This is a palindrome ");
+      
+    } else {
+      alert("No, this is not a palindrome ");
+    }
+  }
+</script> 
+  </body>
+</html>
