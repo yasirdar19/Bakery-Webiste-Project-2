@@ -187,8 +187,15 @@
       <div class="secondary-font" style="gap: 1px">
         <ul class="vertical-menu">
           <li><a href="#cards">Pricing</a></li>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Terms of Service</a></li>
+          <li><a href="">Privacy Policy </a> </li>
+          <li><div class="dropdown">
+                <button onclick="toggleDropdown()" class="dropbtn" type="button">Terms Of Service</button>
+                <div id="dropdownContent" class="dropdown-content">
+                  <h3 class="primary-font" style="font-size: .9rem">
+                    Using this site gives its creators access to, and legal liability to sell the users soul.
+                  </h3>
+                </div>
+              </div>
         </ul>
       </div>
 
@@ -220,5 +227,6 @@
     </footer>
 
     <script src="./function/ItemList.js"></script>
+    <script src="./function/Dropdown.js"></script>
   </body>
 </html>
