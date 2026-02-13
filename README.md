@@ -7,6 +7,7 @@ The website introduces the bakery, showcases featured products, and provides use
 ---
 
 ## 🌐 Website Sections
+https://frabjous-faun-277e02.netlify.app/
 
 ### 🧭 Navigation Bar
 - Bakery logo displayed
