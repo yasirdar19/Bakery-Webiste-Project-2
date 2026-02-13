@@ -12,6 +12,7 @@
     ></script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
+
   <body class="article-content">
     <section class="navbar">
       <img
@@ -22,31 +23,35 @@
       />
 
       <nav class="primary-font">
-        <ul class="horizontal-menu" id = "TaskBar">
+        <ul class="horizontal-menu" id="TaskBar">
           <li><a href="">Home</a></li>
           <li><a href="#cards">Shop</a></li>
           <li><a href="#aboutUs">About Us</a></li>
+
+          <!-- Cart -->
           <li>
-            <a href=""><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-          <li> <h3 class="special-color" style="font-size: .9rem">
-            src=CheckOut.js.getCartSize()</h3>
+            <a href="#" id="cartBtn">
+              <i class="fa-solid fa-cart-shopping"></i> Cart
+            </a>
+          </li>
+          <li>
+            <h3 class="special-color" style="font-size: 0.9rem">
+              (<span id="cartCount">0</span>)
+            </h3>
           </li>
         </ul>
       </nav>
     </section>
+
     <section class="banner">
       <div class="hero">
-        
-        <h1 class="primary-font" style="padding-top: 25px;">
-          Always
-          <span class="special-color"
-            >Fresh <br />
-            Cookies</span
-          >
+        <h1 class="primary-font" style="padding-top: 25px">
+          Always <span class="special-color">Fresh <br /> Cookies</span>
         </h1>
+
         <p class="secondary-font bottom-text" id="aboutUs">
-          We don't just bake pastries; we curate atmosphere. Guided by the
-          2026 shift toward sustainable, natural styling, we prioritize
+          We don't just bake pastries; we curate atmosphere. Guided by the 2026
+          shift toward sustainable, natural styling, we prioritize
           <b>seasonal blooms</b> sourced directly from local growers to ensure
           every petal is as fresh as it is beautiful. Our signature style
           focuses on rich textures—pairing delicate ranunculus with
@@ -55,40 +60,48 @@
           both contemporary and wild.
         </p>
       </div>
+
       <div>
         <img class="banner-image" src="./assets/Main.png" alt="" />
       </div>
     </section>
+
     <section class="plants">
       <h2 class="primary-font">
         <span class="special-color">Our </span>Pastries
       </h2>
+
       <p
         class="secondary-font"
         style="font-size: large; padding: 10px; width: 60%"
       >
-        Step inside our sun-drenched shop to smell the baked goods, or join one of our
-        weekend workshops to learn the art of baking. Whether you're
-        looking for a cookie or a wedding cake, we're here to help
-        you find the perfect way to say it with sweets.
+        Step inside our sun-drenched shop to smell the baked goods, or join one
+        of our weekend workshops to learn the art of baking. Whether you're
+        looking for a cookie or a wedding cake, we're here to help you find the
+        perfect way to say it with sweets.
       </p>
+
       <div class="cards" id="cards">
-        <div class="card"> 
-          <img src="./assets/chocolate-strawberry-cheesecake-plate-garnished-with-strawberry-syrup.jpg" alt="lilly" />
+        <div class="card">
+          <img
+            src="./assets/chocolate-strawberry-cheesecake-plate-garnished-with-strawberry-syrup.jpg"
+            alt="lilly"
+          />
           <h3 class="primary-font" style="font-size: 1.1rem">
-            Chocolate Strawberry Cheesecake garnished with strawberry syrup (small)
+            Chocolate Strawberry Cheesecake garnished with strawberry syrup
+            (small)
           </h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $20</h4>
           <button>Add to Cart</button>
         </div>
+
         <div class="card">
           <img src="./assets/Crousant.jpg" alt="lilly" />
-          <h3 class="primary-font" style="font-size: 1.1rem">
-            Crousant 
-          </h3>
+          <h3 class="primary-font" style="font-size: 1.1rem">Crousant</h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $10</h4>
           <button>Add to Cart</button>
         </div>
+
         <div class="card">
           <img src="./assets/CherryCreamDanish.jpg" alt="lilly" />
           <h3 class="primary-font" style="font-size: 1.1rem">
@@ -97,6 +110,7 @@
           <h4 class="primary-font" style="font-size: 1rem">Price: $10</h4>
           <button>Add to Cart</button>
         </div>
+
         <div class="card">
           <img src="./assets/two-pastry-rolls-with-raisins.jpg" alt="rose" />
           <h3 class="primary-font" style="font-size: 1.1rem">
@@ -105,30 +119,28 @@
           <h4 class="primary-font" style="font-size: 1rem">Price: $5</h4>
           <button>Add to Cart</button>
         </div>
+
         <div class="card">
           <img src="./assets/HotCoffee.jpg" alt="rose" />
-          <h3 class="primary-font" style="font-size: 1.1rem">
-            Hot Coffee
-          </h3>
+          <h3 class="primary-font" style="font-size: 1.1rem">Hot Coffee</h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $5</h4>
           <button>Add to Cart</button>
         </div>
+
         <div class="card">
           <img src="./assets/IcedCoffee.jpg" alt="rose" />
-          <h3 class="primary-font" style="font-size: 1.1rem">
-            Ice Coffee
-          </h3>
+          <h3 class="primary-font" style="font-size: 1.1rem">Ice Coffee</h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $7</h4>
           <button>Add to Cart</button>
         </div>
+
         <div class="card">
           <img src="./assets/PinkLemonaid.jpg" alt="fall" />
-          <h3 class="primary-font" style="font-size: 1.1rem">
-            Pink Lemonaid
-          </h3>
+          <h3 class="primary-font" style="font-size: 1.1rem">Pink Lemonaid</h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $5</h4>
           <button>Add to Cart</button>
         </div>
+
         <div class="card">
           <img src="./assets/TraditionalLemonaid.jpg" alt="fall" />
           <h3 class="primary-font" style="font-size: 1.1rem">
@@ -137,18 +149,23 @@
           <h4 class="primary-font" style="font-size: 1rem">Price: $4</h4>
           <button>Add to Cart</button>
         </div>
+
         <div class="card">
           <img src="./assets/VarietyPlatter.jpg" alt="fall" />
-          <h3 class="primary-font" style="font-size: 1.1rem">Variety Platter</h3>
+          <h3 class="primary-font" style="font-size: 1.1rem">
+            Variety Platter
+          </h3>
           <h4 class="primary-font" style="font-size: 1rem">Price: $90</h4>
           <button>Add to Cart</button>
         </div>
       </div>
     </section>
-    <section class="news-letter-container" id = "newsLetter">
+
+    <section class="news-letter-container" id="newsLetter">
       <h1 class="primary-font">
         Join the <span class="special-color">Colorful </span> Bunch
       </h1>
+
       <div
         style="display: flex; gap: 5px; align-items: center"
         class="email-div secondary-font"
@@ -159,9 +176,11 @@
           style="width: 300px; height: 40px"
           placeholder="Enter your email"
         />
-        <button onclick="submitEmail()"></buttononclick>Subscribe</button>
+        <!-- fixed button -->
+        <button type="button" onclick="submitEmail()">Subscribe</button>
       </div>
     </section>
+
     <footer>
       <div>
         <img
@@ -181,27 +200,66 @@
           <li><a href="">Home</a></li>
           <li><a href="#aboutUs">About Us</a></li>
           <li><a href="#newsLetter">Blog</a></li>
-          
         </ul>
       </div>
+
+      <div
+        id="cartBox"
+        style="
+          display: none;
+          position: fixed;
+          top: 90px;
+          right: 20px;
+          background: white;
+          border: 1px solid #ccc;
+          padding: 15px;
+          width: 260px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          z-index: 9999;
+        "
+      >
+        <h3 style="margin-top: 0">Cart</h3>
+
+        <div id="cartItems" style="max-height: 200px; overflow: auto"></div>
+
+        <p><strong>Total: $<span id="cartTotal">0</span></strong></p>
+
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkout()">Checkout</button>
+      </div>
+
       <div class="secondary-font" style="gap: 1px">
         <ul class="vertical-menu">
           <li><a href="#cards">Pricing</a></li>
-          <li><a href="">Privacy Policy </a> </li>
-          <li><div class="dropdown">
-                <button onclick="toggleDropdown('dropdownContent', this)" class="dropbtn" type="button">Terms Of Service</button>
-                <div id="dropdownContent" class="dropdown-content">
-                  <h3 class="primary-font" style="font-size: .9rem">
-                    Using this site gives its creators access to, and legal liability to sell the users soul.
-                  </h3>
-                </div>
+          <li><a href="">Privacy Policy </a></li>
+          <li>
+            <div class="dropdown">
+              <button
+                onclick="toggleDropdown('dropdownContent', this)"
+                class="dropbtn"
+                type="button"
+              >
+                Terms Of Service
+              </button>
+              <div id="dropdownContent" class="dropdown-content">
+                <h3 class="primary-font" style="font-size: 0.9rem">
+                 Using this site gives its creators access to, and legal liability to sell the
+                  users soul.
+                </h3>
               </div>
+            </div>
+          </li>
         </ul>
       </div>
 
       <div
         class="secondary-font"
-        style="display: flex; flex-direction: column; padding: 5px; gap: 10px"
+        style="
+          display: flex;
+          flex-direction: column;
+          padding: 5px;
+          gap: 10px;
+        "
       >
         <img
           style="width: 30px; height: 30px"
@@ -228,7 +286,26 @@
 
     <script src="./function/ItemList.js"></script>
     <script src="./function/Dropdown.js"></script>
-    <script scr="./function/NewsLetter.js"></script>
+    <script src="./function/NewsLetter.js"></script>
 
+   
+    <script src="./function/CheckOut.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // connect add buttons
+        document.querySelectorAll("#cards .card button").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            addFromCard(btn.closest(".card"));
+          });
+        });
+
+        // cart button
+        document.getElementById("cartBtn").addEventListener("click", (e) => {
+          e.preventDefault();
+          showCart();
+        });
+      });
+    </script>
   </body>
 </html>
