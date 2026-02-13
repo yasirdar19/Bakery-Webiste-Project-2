@@ -1,7 +1,19 @@
 function submitEmail() {
-  const inputElement = document.getElementById("email");
+  const email = document.getElementById("email").value;
+
+  if (email === "") {
+    alert("Enter your email first");
+    return;
+  }
+  if (!email.includes("@")) {
+  alert("Enter a valid email");
+  return;
+}
 
 
-  const outputElement = document.getElementById("email");
-  outputElement.textContent = "Email Submitted";
+  alert("Thanks for subscribing!");
+
+
+  document.getElementById("email").value = "";
+  
 }
