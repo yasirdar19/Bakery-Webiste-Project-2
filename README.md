@@ -66,7 +66,7 @@ The website introduces the bakery, showcases featured products, and provides use
 ## 🛠️ Technologies Used
 - HTML5
 - CSS3
-- JavaScript (DOM Manipulation & Cart Logic)
+- JavaScript 
 
 ---
 
