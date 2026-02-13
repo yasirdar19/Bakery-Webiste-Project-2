@@ -1,41 +1,80 @@
-# BakeryWebsite
+# 🥐 BakeryWebsite
 
+## 📌 Project Overview
+BakeryWebsite is a front-end website for a local pastry shop.  
+The website introduces the bakery, showcases featured products, and provides users with an interactive shopping cart experience. It is built using standard web technologies and focuses on clean design, smooth navigation, and user-friendly interaction.
 
-## 🥐 Project Overview
-BakeryWebsite is a front-end website for a local pastry shop. The site introduces the bakery, showcases featured products, and provides ways for customers to connect with the business. It is built using standard web technologies and focuses on clean layout, visuals, and navigation.
-
+---
 
 ## 🌐 Website Sections
-### Navigation Bar
-- Logo displayed 
+
+### 🧭 Navigation Bar
+- Bakery logo displayed
 - Menu links:
   - Home
   - Shop
   - About Us
-  - Cart
+  - Cart (with item counter)
 
-###  Banner Section
+---
+
+### 🎯 Banner Section
 - Large introductory heading
-- Visual image
-- Highlights the bakery’s brand and theme
+- Featured hero image
+- Highlights the bakery’s brand theme and atmosphere
 
-### Products Section
-- Displays bakery items using images
+---
+
+### 🍰 Products Section
+- Displays bakery items using images and descriptions
 - Includes pastries, drinks, and platters
-- Designed to visually showcase products
+- Each item has:
+  - Product title
+  - Price
+  - **Add to Cart** button
 
-### Contact & Social Media
-- Social media icons included
-- Allows users to connect with the bakery online
+---
+
+### 🛒 Shopping Cart
+- Interactive cart system
+- Add items directly from product cards
+- Cart counter updates dynamically
+- View cart popup with:
+  - Selected items
+  - Total price
+  - Clear Cart button
+  - Checkout button
+
+---
+
+### 📩 Newsletter Section
+- Email subscription input
+- Subscribe button for customer engagement
+
+---
+
+### 🔗 Contact & Social Media
+- Social media icons included:
+  - LinkedIn
+  - Twitter/X
+  - Facebook
+  - YouTube
+- Helps users connect with the bakery online
+
+---
 
 ## 🛠️ Technologies Used
 - HTML5
 - CSS3
+- JavaScript (DOM Manipulation & Cart Logic)
+
+---
 
 ## 🎨 Assets
-All images and icons used on the website are stored in the `assets` folder and linked in the HTML file.
+All images and icons used in the website are stored inside the `assets` folder and linked within the HTML file.
+
+---
 
 ## 👨‍🍳 Authors
-- Yasir
+- Yasir  
 - Landon
-
