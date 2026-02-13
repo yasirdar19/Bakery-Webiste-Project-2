@@ -1,7 +1,7 @@
 
 
-  function toggleDropdown() {
-    const content = document.getElementById("dropdownContent");
+  function toggleDropdown(String) {
+    const content = document.getElementById(String);
     const btn = document.querySelector(".dropbtn");
 
     const isOpen = content.classList.toggle("show");

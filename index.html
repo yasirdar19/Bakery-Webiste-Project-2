@@ -159,7 +159,7 @@
           style="width: 300px; height: 40px"
           placeholder="Enter your email"
         />
-        <button>Subscribe</button>
+        <button onclick="submitEmail()"></buttononclick>Subscribe</button>
       </div>
     </section>
     <footer>
@@ -181,7 +181,7 @@
           <li><a href="">Home</a></li>
           <li><a href="#aboutUs">About Us</a></li>
           <li><a href="#newsLetter">Blog</a></li>
-          <li><a href="">Contact Us</a></li>
+          
         </ul>
       </div>
       <div class="secondary-font" style="gap: 1px">
@@ -189,7 +189,7 @@
           <li><a href="#cards">Pricing</a></li>
           <li><a href="">Privacy Policy </a> </li>
           <li><div class="dropdown">
-                <button onclick="toggleDropdown()" class="dropbtn" type="button">Terms Of Service</button>
+                <button onclick="toggleDropdown('dropdownContent', this)" class="dropbtn" type="button">Terms Of Service</button>
                 <div id="dropdownContent" class="dropdown-content">
                   <h3 class="primary-font" style="font-size: .9rem">
                     Using this site gives its creators access to, and legal liability to sell the users soul.
@@ -228,5 +228,7 @@
 
     <script src="./function/ItemList.js"></script>
     <script src="./function/Dropdown.js"></script>
+    <script scr="./function/NewsLetter.js"></script>
+
   </body>
 </html>
